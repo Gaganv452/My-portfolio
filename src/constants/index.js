@@ -177,7 +177,7 @@ import {
   
   const projects = [
     {
-      name: "To Do list",
+      name: "Slack",
       description:
         "Manage tasks seamlessly with this sleek web app.",
       tags: [
@@ -198,8 +198,8 @@ import {
         }
       ],
       image: carrent,
-      website_link: "https://to-do-lime-omega.vercel.app/",
-      source_code_link:"https://github.com/Siser-Pratap/ToDo",
+      website_link: "https://slate-three-ashy.vercel.app/",
+      source_code_link:"https://github.com/Gaganv452/Slate",
     },
     {
       name: "Image Gen",
@@ -225,12 +225,12 @@ import {
       ],
       image: Image_Gen,
       website_link:"https://image-gen-ashen-six.vercel.app/",
-      source_code_link: "https://github.com/Siser-Pratap/Image_Gen",
+      // source_code_link: "https://github.com/Siser-Pratap/Image_Gen",
     },
     {
-      name: "ChatNow",
+      name: "Nova",
       description:
-        "ChatNow is an intelligent chat app powered by Google Gemini API, designed to answer any questions users have instantly. With advanced AI capabilities, ChatNow provides accurate and reliable responses, making it the perfect companion for quick information, problem-solving, and everyday conversations. Whether you need help with research or advice.",
+        "Nova is an intelligent chat app powered by Google Gemini API, designed to answer any questions users have instantly. With advanced AI capabilities, ChatNow provides accurate and reliable responses, making it the perfect companion for quick information, problem-solving, and everyday conversations. Whether you need help with research or advice.",
       tags: [
         {
           name: "React",
@@ -250,8 +250,8 @@ import {
         }
       ],
       image: chatNow,
-      website_link:"https://chat-now-rho.vercel.app/",
-      source_code_link: "https://github.com/Siser-Pratap/ChatNow",
+      website_link:"https://nova-lemon-rho.vercel.app/",
+      source_code_link: "https://github.com/Gaganv452/Nova",
       
     },
  {
@@ -278,8 +278,8 @@ import {
       
       ],
      image: lock,
-     website_link:"https://www.npmjs.com/package/authence",
-       source_code_link: "https://github.com/Siser-Pratap/Authence",
+     website_link:"https://unified-aicte-portal.vercel.app/",
+     source_code_link: "https://github.com/Gaganv452/Unified-AICTE-Portal",
      },
   ];
   

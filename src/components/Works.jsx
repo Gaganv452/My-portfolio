@@ -3,26 +3,19 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { fadeIn,textVariant } from "../utils/motion";
-import { github , tries} from "../assets";
+import { tries, github } from "../assets";
 import { SectionWrapper } from "../hoc";
 
 const Works = () => {
 
   const ProjectCard = ({index, name, description, tags, image, source_code_link, website_link}) =>{
+    const openLink = (link) => window.open(link, "_blank", "noopener,noreferrer");
+
     return (
       <motion.div variants={fadeIn("up", "spring", index*0.5, 1.5)}>
           <Tilt options={{max:45,scale:1, speed:450}} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
             <div className="relative w-full h-[280px]">
-            <img src={image} alt="project_image" className="w-full h-full object-cover rounded-2xl" />
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div onClick={()=>window.open(source_code_link, "_blank")} className="black-gradient mr-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                <img src={github} alt="source code"  className="w-1/2 h-1/2  object-contain " />
-              </div>
-              <div onClick={()=>window.open(website_link, "_blank")} className="black-gradient ml-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                <img src={tries} alt="Website" className="w-1/2 h-1/2  object-contain " />
-                
-              </div>
-            </div>
+              <img src={image} alt="project_image" className="w-full h-full object-cover rounded-2xl" />
             </div>
 
             <div className="mt-5">
@@ -37,6 +30,25 @@ const Works = () => {
                      className={`text-[14px]  ${tag.color}`}>#{tag.name}</p>
                 )
               )}
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              <button
+                type="button"
+                onClick={() => openLink(website_link)}
+                className="flex items-center gap-2 rounded-full bg-[#915EFF] px-4 py-2 text-sm font-medium text-white transition hover:opacity-80"
+              >
+                <img src={tries} alt="" className="h-4 w-4 object-contain" />
+                Try
+              </button>
+              <button
+                type="button"
+                onClick={() => openLink(source_code_link)}
+                className="flex items-center gap-2 rounded-full border border-secondary/60 px-4 py-2 text-sm font-medium text-secondary transition hover:border-white hover:text-white"
+              >
+                <img src={github} alt="" className="h-4 w-4 object-contain" />
+                GitHub
+              </button>
             </div>
           </Tilt>
       </motion.div>
