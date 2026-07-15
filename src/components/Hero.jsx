@@ -9,7 +9,7 @@ const Hero = () => {
 
   const pdfUrl = `${window.location.origin}/Gagan_resume.pdf`;
 
-  const googleDocsUrl = `https://drive.google.com/file/d/13FDpn31a3zxHx1IBEgxqW05jDFvG9-nu/view?usp=sharing`
+  const googleDocsUrl = `https://drive.google.com/file/d/18tdMPUlIbpmSTHwEaGBtEgv7s9LEfDng/view?usp=sharing`
   
   const handlepreview = () => {
     window.open(googleDocsUrl, "_blank");
